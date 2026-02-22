@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India's Festivals - Cultural Diversity & Celebrations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --saffron: #FF9933;
+            --deep-orange: #E65100;
+            --emerald: #138808;
+            --royal-blue: #000080;
+            --gold: #FFD700;
+            --crimson: #DC143C;
+            --cream: #FFF8E7;
+            --deep-purple: #4A148C;
+            --turquoise: #00897B;
+        }
+
+        body {
+            font-family: 'Crimson Pro', serif;
+            color: #2C1810;
+            background: var(--cream);
+            overflow-x: hidden;
+        }
+
+        /* Decorative Background Pattern */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 153, 51, 0.03) 35px, rgba(255, 153, 51, 0.03) 70px),
+                repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(19, 136, 8, 0.03) 35px, rgba(19, 136, 8, 0.03) 70px);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Animated Mandala Background */
+        .mandala-bg {
+            position: fixed;
+            top: -10%;
+            right: -10%;
+            width: 60%;
+            height: 60%;
+            opacity: 0.06;
+            background-image: radial-gradient(circle, var(--saffron) 2px, transparent 2px);
+            background-size: 40px 40px;
+            animation: rotate 120s linear infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Header */
+        header {
+            position: relative;
+            background: linear-gradient(135deg, var(--saffron) 0%, var(--deep-orange) 100%);
+            padding: 4rem 2rem 6rem;
+            text-align: center;
+            overflow: hidden;
+            border-bottom: 8px solid var(--gold);
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(255, 255, 255, 0.1) 20px, rgba(255, 255, 255, 0.1) 40px);
+            animation: slidePattern 20s linear infinite;
+        }
+
+        @keyframes slidePattern {
+            from { transform: translateX(0); }
+            to { transform: translateX(40px); }
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: white;
+            text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--cream);
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease-out 0.3s backwards;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Decorative Divider */
+        .divider {
+            text-align: center;
+            margin: 3rem 0;
+            position: relative;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 35%;
+            height: 3px;
+            background: linear-gradient(to right, transparent, var(--gold), transparent);
+        }
+
+        .divider::before { left: 0; }
+        .divider::after { right: 0; }
+
+        .divider-symbol {
+            font-size: 2rem;
+            color: var(--saffron);
+            display: inline-block;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Introduction Section */
+        .intro {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 5rem;
+            animation: fadeIn 1s ease-out 0.6s backwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .intro p {
+            font-size: 1.4rem;
+            line-height: 2;
+            color: #4A3428;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Festival Grid */
+        .festivals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .festival-card {
+            background: white;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 3px solid var(--saffron);
+            position: relative;
+            animation: slideInUp 0.8s ease-out backwards;
+        }
+
+        .festival-card:nth-child(1) { animation-delay: 0.1s; }
+        .festival-card:nth-child(2) { animation-delay: 0.2s; }
+        .festival-card:nth-child(3) { animation-delay: 0.3s; }
+        .festival-card:nth-child(4) { animation-delay: 0.4s; }
+        .festival-card:nth-child(5) { animation-delay: 0.5s; }
+        .festival-card:nth-child(6) { animation-delay: 0.6s; }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .festival-card:hover {
+            transform: translateY(-10px) rotate(-1deg);
+            box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        .festival-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, var(--saffron), var(--emerald), var(--royal-blue));
+        }
+
+        .festival-header {
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(255, 153, 51, 0.1) 0%, rgba(19, 136, 8, 0.1) 100%);
+            position: relative;
+        }
+
+        .festival-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .festival-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--deep-orange);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .festival-season {
+            font-size: 1.1rem;
+            color: var(--emerald);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .festival-content {
+            padding: 2rem;
+        }
+
+        .festival-content p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #5D4E37;
+            margin-bottom: 1.5rem;
+        }
+
+        .festival-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: var(--saffron);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        /* Cultural Info Boxes */
+        .info-boxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 5rem;
+        }
+
+        .info-box {
+            background: white;
+            padding: 2.5rem;
+            border-left: 6px solid;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            animation: fadeIn 1s ease-out backwards;
+        }
+
+        .info-box:nth-child(1) { 
+            border-color: var(--saffron);
+            animation-delay: 0.7s;
+        }
+        .info-box:nth-child(2) { 
+            border-color: var(--emerald);
+            animation-delay: 0.8s;
+        }
+        .info-box:nth-child(3) { 
+            border-color: var(--royal-blue);
+            animation-delay: 0.9s;
+        }
+
+        .info-box:hover {
+            transform: translateX(10px);
+        }
+
+        .info-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--deep-purple);
+        }
+
+        .info-box p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5D4E37;
+        }
+
+        /* Footer Quote */
+        .quote-section {
+            background: linear-gradient(135deg, var(--deep-purple) 0%, var(--royal-blue) 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-top: 5rem;
+            border-top: 8px solid var(--gold);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quote-section::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 15rem;
+            color: rgba(255, 255, 255, 0.1);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .quote-section blockquote {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: white;
+            max-width: 900px;
+            margin: 0 auto 1.5rem;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+            line-height: 1.6;
+        }
+
+        .quote-author {
+            font-size: 1.3rem;
+            color: var(--gold);
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Footer */
+        footer {
+            background: #2C1810;
+            color: var(--cream);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer p {
+            font-size: 1.1rem;
+        }
+
+        /* States Section */
+        .states-section {
+            margin: 3rem 0 5rem;
+        }
+
+        .states-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .state-card {
+            background: white;
+            border: 3px solid var(--saffron);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .state-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 153, 51, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .state-card:hover::before {
+            left: 100%;
+        }
+
+        .state-card:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.15);
+            border-color: var(--deep-orange);
+        }
+
+        .state-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--deep-purple);
+            margin-bottom: 1rem;
+        }
+
+        .state-icon {
+            font-size: 3rem;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .state-card:hover .state-icon {
+            animation: spin 0.6s ease;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            background: var(--cream);
+            margin: 5% auto;
+            padding: 0;
+            border: 5px solid var(--gold);
+            width: 90%;
+            max-width: 900px;
+            border-radius: 0;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+            animation: slideDown 0.4s ease;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .close {
+            color: var(--deep-orange);
+            float: right;
+            font-size: 3rem;
+            font-weight: bold;
+            padding: 0 1.5rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: var(--crimson);
+        }
+
+        #modalBody {
+            padding: 2rem;
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, var(--saffron) 0%, var(--deep-orange) 100%);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--gold);
+        }
+
+        .modal-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: white;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+            margin: 0;
+        }
+
+        .modal-festival {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--saffron);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-festival h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--deep-orange);
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-festival-time {
+            color: var(--emerald);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .modal-festival p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5D4E37;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .festivals-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quote-section blockquote {
+                font-size: 1.5rem;
+            }
+
+            .states-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .modal-content {
+                width: 95%;
+                margin: 10% auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mandala-bg"></div>
+
+    <header>
+        <h1>Festivals of Hindustan</h1>
+        <p class="subtitle">A Divine Tapestry of Colors, Devotion & Cultural Heritage</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <p>India's festivals are a spectacular celebration of ancient wisdom, mythological tales, and vibrant traditions throughout the year. Each festival is a unique expression of regional culture, spiritual devotion, seasonal rhythms, and the eternal dance between divine forces.</p>
+            <p>From the northern Himalayas to the southern coasts, from eastern plains to western deserts, every corner of Hindustan illuminates with its own distinct celebrations, creating a magnificent tapestry of devotional diversity and cultural richness.</p>
+        </div>
+
+        <div class="divider">
+            <span class="divider-symbol">✦</span>
+        </div>
+
+        <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 3rem; color: var(--deep-orange); margin-bottom: 3rem;">Major Festivals</h2>
+
+        <div class="festivals-grid">
+            <div class="festival-card">
+                <div class="festival-header">
+                    <span class="festival-icon">🪔</span>
+                    <h3>Diwali</h3>
+                    <p class="festival-season">October/November</p>
+                </div>
+                <div class="festival-content">
+                    <p>The Festival of Lights celebrates the victory of light over darkness and good over evil. Homes are adorned with oil lamps, colorful rangoli designs grace doorsteps, and fireworks illuminate the night sky. Families exchange sweets and gifts, symbolizing prosperity and new beginnings.</p>
+                    <div class="festival-tags">
+                        <span class="tag">Pan-Indian</span>
+                        <span class="tag">5 Days</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="festival-card">
+                <div class="festival-header">
+                    <span class="festival-icon">🎨</span>
+                    <h3>Holi</h3>
+                    <p class="festival-season">March</p>
+                </div>
+                <div class="festival-content">
+                    <p>The Festival of Colors marks the arrival of spring and the triumph of good over evil. People joyously throw colored powders and water at each other, transcending social barriers. The celebration honors the divine love of Radha and Krishna and commemorates the legend of Prahlada.</p>
+                    <div class="festival-tags">
+                        <span class="tag">Pan-Indian</span>
+                        <span class="tag">Spring</span>
+                    </div>
+                </div>
+            </div>
+
+<div class="festival-card">
+                <div class="festival-header">
+                    <span class="festival-icon">🐘</span>
+                    <h3>Ganesh Chaturthi</h3>
+                    <p class="festival-season">August/September</p>
+                </div>
+                <div class="festival-content">
+                    <p>This beloved festival honors Lord Ganesha, the remover of obstacles. Clay idols of Ganesha are installed in homes and public pandals, worshipped for ten days with devotional songs, dances, and offerings. The celebration concludes with grand immersion processions.</p>
+                    <div class="festival-tags">
+                        <span class="tag">Maharashtra</span>
+                        <span class="tag">10 Days</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="festival-card">
+                <div class="festival-header">
+                    <span class="festival-icon">⛰️</span>
+                    <h3>Durga Puja</h3>
+                    <p class="festival-season">September/October</p>
+                </div>
+                <div class="festival-content">
+                    <p>The grandest festival of Bengal celebrates Goddess Durga's victory over the demon Mahishasura. Elaborate artistic pandals showcase stunning idols, while cultural programs, music, and traditional dances fill the streets. Communities come together in celebration and devotion.</p>
+                    <div class="festival-tags">
+                        <span class="tag">Bengal</span>
+                        <span class="tag">Artistic</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="festival-card">
+                <div class="festival-header">
+                    <span class="festival-icon">🌾</span>
+                    <h3>Pongal</h3>
+                    <p class="festival-season">January</p>
+                </div>
+                <div class="festival-content">
+                    <p>Tamil Nadu's harvest festival is a four-day thanksgiving celebration dedicated to the Sun God. Families prepare sweet pongal rice, decorate homes with kolam designs, and honor cattle for their role in agriculture. It marks the end of the harvest season with gratitude and joy.</p>
+                    <div class="festival-tags">
+                        <span class="tag">Tamil Nadu</span>
+                        <span class="tag">Harvest</span>
+                        <span class="tag">4 Days</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider">
+            <span class="divider-symbol">✦</span>
+        </div>
+
+        <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 3rem; color: var(--deep-orange); margin-bottom: 3rem;">Festivals Across States</h2>
+
+        <div class="states-section">
+            <h3 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--deep-purple); margin-bottom: 2rem;">States of India</h3>
+            <div class="states-grid">
+                <div class="state-card" onclick="showStateFestivals('andhrapradesh')">
+                    <div class="state-name">Andhra Pradesh</div>
+                    <div class="state-icon">🛕</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('arunachalpradesh')">
+                    <div class="state-name">Arunachal Pradesh</div>
+                    <div class="state-icon">⛰️</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('assam')">
+                    <div class="state-name">Assam</div>
+                    <div class="state-icon">🎋</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('bihar')">
+                    <div class="state-name">Bihar</div>
+                    <div class="state-icon">🕉️</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('chhattisgarh')">
+                    <div class="state-name">Chhattisgarh</div>
+                    <div class="state-icon">🎪</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('goa')">
+                    <div class="state-name">Goa</div>
+                    <div class="state-icon">🏖️</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('gujarat')">
+                    <div class="state-name">Gujarat</div>
+                    <div class="state-icon">🪘</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('haryana')">
+                    <div class="state-name">Haryana</div>
+                    <div class="state-icon">🌾</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('himachalpradesh')">
+                    <div class="state-name">Himachal Pradesh</div>
+                    <div class="state-icon">🏔️</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('jharkhand')">
+                    <div class="state-name">Jharkhand</div>
+                    <div class="state-icon">🎭</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('karnataka')">
+                    <div class="state-name">Karnataka</div>
+                    <div class="state-icon">🎭</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('kerala')">
+                    <div class="state-name">Kerala</div>
+                    <div class="state-icon">🐘</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('madhyapradesh')">
+                    <div class="state-name">Madhya Pradesh</div>
+                    <div class="state-icon">🎪</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('maharashtra')">
+                    <div class="state-name">Maharashtra</div>
+                    <div class="state-icon">🐘</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('manipur')">
+                    <div class="state-name">Manipur</div>
+                    <div class="state-icon">💃</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('meghalaya')">
+                    <div class="state-name">Meghalaya</div>
+                    <div class="state-icon">🌧️</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('mizoram')">
+                    <div class="state-name">Mizoram</div>
+                    <div class="state-icon">🎋</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('nagaland')">
+                    <div class="state-name">Nagaland</div>
+                    <div class="state-icon">🎺</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('odisha')">
+                    <div class="state-name">Odisha</div>
+                    <div class="state-icon">🛕</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('punjab')">
+                    <div class="state-name">Punjab</div>
+                    <div class="state-icon">🌾</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('rajasthan')">
+                    <div class="state-name">Rajasthan</div>
+                    <div class="state-icon">🐪</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('sikkim')">
+                    <div class="state-name">Sikkim</div>
+                    <div class="state-icon">🏔️</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('tamilnadu')">
+                    <div class="state-name">Tamil Nadu</div>
+                    <div class="state-icon">🌾</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('telangana')">
+                    <div class="state-name">Telangana</div>
+                    <div class="state-icon">🎊</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('tripura')">
+                    <div class="state-name">Tripura</div>
+                    <div class="state-icon">🎋</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('uttarpradesh')">
+                    <div class="state-name">Uttar Pradesh</div>
+                    <div class="state-icon">🕉️</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('uttarakhand')">
+                    <div class="state-name">Uttarakhand</div>
+                    <div class="state-icon">🏔️</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('westbengal')">
+                    <div class="state-name">West Bengal</div>
+                    <div class="state-icon">⛰️</div>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--deep-purple); margin: 3rem 0 2rem;">Union Territories</h3>
+            <div class="states-grid">
+                <div class="state-card" onclick="showStateFestivals('andamannicobar')">
+                    <div class="state-name">Andaman & Nicobar</div>
+                    <div class="state-icon">🏝️</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('chandigarh')">
+                    <div class="state-name">Chandigarh</div>
+                    <div class="state-icon">🏛️</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('dadranagarhaveli')">
+                    <div class="state-name">Dadra & Nagar Haveli</div>
+                    <div class="state-icon">🌴</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('delhi')">
+                    <div class="state-name">Delhi (NCT)</div>
+                    <div class="state-icon">🏛️</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('jammu')">
+                    <div class="state-name">Jammu & Kashmir</div>
+                    <div class="state-icon">🏔️</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('ladakh')">
+                    <div class="state-name">Ladakh</div>
+                    <div class="state-icon">🏔️</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('lakshadweep')">
+                    <div class="state-name">Lakshadweep</div>
+                    <div class="state-icon">🏝️</div>
+                </div>
+                <div class="state-card" onclick="showStateFestivals('puducherry')">
+                    <div class="state-name">Puducherry</div>
+                    <div class="state-icon">🏖️</div>
+                </div>
+            </div>
+
+            <!-- Festival Details Modal -->
+            <div id="festivalModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div id="modalBody"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider">
+            <span class="divider-symbol">✦</span>
+        </div>
+
+        <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 3rem; color: var(--deep-orange); margin-bottom: 3rem;">Cultural Significance</h2>
+
+        <div class="info-boxes">
+            <div class="info-box">
+                <h3>Unity in Diversity</h3>
+                <p>India's festivals showcase incredible diversity across the nation's regions, each with unique customs and traditions. From the grand Durga Puja pandals of Bengal to the vibrant Ganesh Chaturthi processions of Maharashtra, from the colorful Holi celebrations of North India to the harvest joy of Pongal in Tamil Nadu, these festivals reflect the rich tapestry of Indian culture while maintaining core spiritual themes of devotion, celebration, and the eternal triumph of good over evil.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Seasonal Harmony</h3>
+                <p>Many Indian festivals align with agricultural cycles and seasonal changes, reflecting the deep connection between people and nature. Harvest festivals like Pongal, Baisakhi, and Onam celebrate abundance and express gratitude to the elements. This rhythmic celebration of seasons maintains an ancient bond with the earth and its cycles.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Living Traditions</h3>
+                <p>Each festival carries centuries of mythology, art, music, and culinary traditions forward into the present. From classical dance performances during Navratri to the intricate rangoli patterns of Diwali, festivals serve as living museums of cultural heritage, passing wisdom and artistry from generation to generation with vibrant continuity.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="quote-section">
+        <blockquote>
+            "India is the cradle of the human race, the birthplace of human speech, the mother of history, the grandmother of legend, and the great grandmother of tradition."
+        </blockquote>
+        <p class="quote-author">— Mark Twain</p>
+    </div>
+
+    <footer>
+        <p>© 2026 Festivals of India | Honoring Ancient Traditions & Divine Celebrations</p>
+    </footer>
+
+    <script>
+        // Festival data for each state
+        const stateFestivals = {
+            andhrapradesh: {
+                name: "Andhra Pradesh",
+                festivals: [
+                    {
+                        name: "Ugadi",
+                        time: "March/April",
+                        description: "The Telugu New Year celebrated with great enthusiasm. Families prepare the special Ugadi Pachadi, a unique dish combining six tastes symbolizing life's varied experiences. Homes are decorated with mango leaf torans, and people wear new clothes to mark new beginnings."
+                    },
+                    {
+                        name: "Makar Sankranti",
+                        time: "January",
+                        description: "A three-day harvest festival celebrated with colorful rangoli, kite flying, and traditional sweets. The festival honors the Sun God and marks the beginning of the harvest season. Special dishes like ariselu and pulihora are prepared."
+                    },
+                    {
+                        name: "Vinayaka Chavithi (Ganesh Chaturthi)",
+                        time: "August/September",
+                        description: "Lord Ganesha is worshipped with great devotion. Clay idols are installed in homes and public places, offerings of modaks and ladoos are made, and the festival concludes with grand immersion processions in water bodies."
+                    }
+                ]
+            },
+            arunachalpradesh: {
+                name: "Arunachal Pradesh",
+                festivals: [
+                    {
+                        name: "Mopin",
+                        time: "April",
+                        description: "Celebrated by the Galo tribe to ward off evil spirits and bring prosperity. The festival includes traditional dances, folk songs, and rituals performed by priests. Rice beer and traditional delicacies are shared among communities."
+                    },
+                    {
+                        name: "Solung",
+                        time: "September",
+                        description: "The harvest festival of the Adi tribe marking the end of agricultural work. Traditional dances like Ponung are performed, and the festival includes rituals for good harvest and prosperity."
+                    },
+                    {
+                        name: "Dree",
+                        time: "July",
+                        description: "An agricultural festival celebrated by the Apatani tribe for abundant crops and human prosperity. Prayers are offered to the gods, and traditional dances and songs mark the occasion."
+                    }
+                ]
+            },
+            assam: {
+                name: "Assam",
+                festivals: [
+                    {
+                        name: "Rongali Bihu (Bohag Bihu)",
+                        time: "April",
+                        description: "The most vibrant Assamese New Year and spring harvest festival. Youth perform traditional Bihu dances with dhol and pepa, women wear mekhela chador, and communities celebrate with feasts and songs welcoming the harvest season."
+                    },
+                    {
+                        name: "Magh Bihu (Bhogali Bihu)",
+                        time: "January",
+                        description: "The harvest festival celebrated with community feasts and bonfires. Makeshift huts called 'meji' are burned, and traditional games and delicacies like til pitha and laru are enjoyed."
+                    },
+                    {
+                        name: "Kati Bihu (Kongali Bihu)",
+                        time: "October",
+                        description: "A solemn festival during the lean season when granaries are almost empty. Lamps are lit in fields and tulsi plants, and prayers are offered for a good harvest."
+                    }
+                ]
+            },
+            bihar: {
+                name: "Bihar",
+                festivals: [
+                    {
+                        name: "Chhath Puja",
+                        time: "October/November",
+                        description: "The most significant festival of Bihar dedicated to the Sun God and Chhathi Maiya. Devotees observe strict fasting and offer arghya to the setting and rising sun while standing in water bodies. The four-day festival showcases deep devotion and traditional folk songs."
+                    },
+                    {
+                        name: "Ram Navami",
+                        time: "March/April",
+                        description: "Celebrated with great fervor as Bihar is closely associated with Lord Rama's life. Special prayers, bhajan recitals, and processions take place across the state, especially in places connected to the Ramayana."
+                    },
+                    {
+                        name: "Makar Sankranti",
+                        time: "January",
+                        description: "Known locally as Khichdi or Til Sankranti, the festival marks the harvest season. People take holy dips in rivers, fly kites, prepare khichdi and til-based sweets, and donate to the needy."
+                    }
+                ]
+            },
+            chhattisgarh: {
+                name: "Chhattisgarh",
+                festivals: [
+                    {
+                        name: "Bastar Dussehra",
+                        time: "September/October (75 days)",
+                        description: "The world's longest Dussehra celebration lasting 75 days. Unlike other regions, it focuses on local tribal deity Danteshwari Devi. The festival includes unique rituals like Pata Jatra and Rath Yatra with tribal communities playing central roles."
+                    },
+                    {
+                        name: "Hareli",
+                        time: "July/August",
+                        description: "An agricultural festival marking the start of the farming season. Farmers worship their cattle and agricultural equipment, plant trees, and pray for good monsoons and abundant crops."
+                    },
+                    {
+                        name: "Madai",
+                        time: "Various times",
+                        description: "A traditional tribal fair and festival held across different villages. Communities gather to worship local deities, trade goods, and celebrate with folk dances, music, and cultural performances."
+                    }
+                ]
+            },
+            goa: {
+                name: "Goa",
+                festivals: [
+                    {
+                        name: "Ganesh Chaturthi",
+                        time: "August/September",
+                        description: "Celebrated with Goan fervor featuring artistic clay idols and traditional music. The festival showcases Goa's unique cultural blend with sarvajanik (public) celebrations and home installations followed by immersion processions."
+                    },
+                    {
+                        name: "Shigmo",
+                        time: "March",
+                        description: "Goa's version of Holi, celebrated as a spring festival with colorful street parades featuring folk dances like Ghode Modni and Fugdi. Float parades showcasing mythological themes and traditional music make it spectacular."
+                    }
+                ]
+            },
+            gujarat: {
+                name: "Gujarat",
+                festivals: [
+                    {
+                        name: "Navratri",
+                        time: "September/October",
+                        description: "Nine nights of devotional dancing and celebration honoring Goddess Durga. The traditional garba and dandiya raas dances continue late into the night with people dressed in colorful traditional attire, making Gujarat the Navratri capital of India."
+                    },
+                    {
+                        name: "Uttarayan (Kite Festival)",
+                        time: "January",
+                        description: "The international kite festival transforming Gujarat's skies with millions of colorful kites. Special foods like undhiyu and chikki are prepared, and rooftops become social gathering spots for kite flying competitions."
+                    },
+                    {
+                        name: "Janmashtami",
+                        time: "August",
+                        description: "Lord Krishna's birth celebrated with great fervor, especially in Dwarka. Dahi handi competitions, jhankis (decorative displays), and midnight celebrations mark the occasion with devotional songs throughout the night."
+                    }
+                ]
+            },
+            haryana: {
+                name: "Haryana",
+                festivals: [
+                    {
+                        name: "Teej",
+                        time: "July/August",
+                        description: "A monsoon festival celebrated by women with swings, folk songs, and traditional dances. Women dress in green and red attire, apply mehendi, and pray for marital bliss and the well-being of their families."
+                    },
+                    {
+                        name: "Holi",
+                        time: "March",
+                        description: "Celebrated with traditional fervor featuring folk songs like Phag and community gatherings. The festival of colors brings together communities in joyous celebration with traditional sweets and colors."
+                    },
+                    {
+                        name: "Navratri",
+                        time: "September/October",
+                        description: "Nine days of fasting and devotion to Goddess Durga. Kanya puja is performed on Ashtami, and families organize jagrans with devotional singing throughout the nights."
+                    }
+                ]
+            },
+            himachalpradesh: {
+                name: "Himachal Pradesh",
+                festivals: [
+                    {
+                        name: "Kullu Dussehra",
+                        time: "October",
+                        description: "A week-long international festival starting when Dussehra ends elsewhere. Over 200 deities from nearby villages are brought in procession to Kullu, making it a unique congregation of gods. Cultural performances and fairs create a spectacular atmosphere."
+                    },
+                    {
+                        name: "Mahashivratri",
+                        time: "February/March",
+                        description: "Celebrated with exceptional devotion across the state's numerous Shiva temples. Pilgrims trek to remote mountain shrines, observe fasts, and participate in night-long vigils with chanting and prayers."
+                    }
+                ]
+            },
+            jharkhand: {
+                name: "Jharkhand",
+                festivals: [
+                    {
+                        name: "Sarhul",
+                        time: "March/April",
+                        description: "A tribal festival celebrating nature and the arrival of spring. The Sal tree is worshipped, and traditional dances and songs honor the earth and forests. Communities gather to pray for prosperity and good harvest."
+                    },
+                    {
+                        name: "Karma",
+                        time: "August/September",
+                        description: "A harvest festival celebrating the Karma tree. Tribal communities perform the Karma dance in circles around the Karma branch, singing folk songs and celebrating nature's bounty."
+                    },
+                    {
+                        name: "Durga Puja",
+                        time: "September/October",
+                        description: "Celebrated with Bengali influence in urban areas with artistic pandals and cultural programs. The festival showcases both tribal and mainstream cultural elements."
+                    }
+                ]
+            },
+            karnataka: {
+                name: "Karnataka",
+                festivals: [
+                    {
+                        name: "Mysuru Dasara",
+                        time: "September/October",
+                        description: "The royal celebration of Karnataka, world-famous for its grandeur. The Mysuru Palace is illuminated with 100,000+ lights, grand processions featuring decorated elephants parade through streets, and cultural programs showcase Karnataka's rich heritage over ten days."
+                    },
+                    {
+                        name: "Ugadi",
+                        time: "March/April",
+                        description: "The Kannada New Year celebrated with traditional rituals and festive meals. The special Ugadi Pachadi combining six tastes symbolizes life's varied experiences. Homes are decorated with mango leaf torans and colorful rangoli."
+                    },
+                    {
+                        name: "Karaga",
+                        time: "March/April",
+                        description: "An ancient festival celebrated in Bangalore honoring Goddess Draupadi. The main carrier balances a decorated pyramid structure on his head while performing a sacred procession through the streets."
+                    }
+                ]
+            },
+            kerala: {
+                name: "Kerala",
+                festivals: [
+                    {
+                        name: "Onam",
+                        time: "August/September",
+                        description: "The grand harvest festival celebrating King Mahabali's annual return. Intricate flower carpets (pookalam) adorn homes, traditional boat races (vallam kali) are held, and the grand Onasadya feast features 26+ vegetarian dishes served on banana leaves."
+                    },
+                    {
+                        name: "Vishu",
+                        time: "April",
+                        description: "The Malayalam New Year beginning with Vishukkani - viewing auspicious items first thing in the morning. Families prepare traditional feasts, wear new clothes, and children receive Vishukkaineetam (money gifts) with fireworks marking the celebrations."
+                    },
+                    {
+                        name: "Thrissur Pooram",
+                        time: "April/May",
+                        description: "One of the most spectacular temple festivals featuring decorated elephants in grand processions. Magnificent firework displays and traditional percussion concerts (panchavadyam) create an unforgettable cultural experience."
+                    }
+                ]
+            },
+            madhyapradesh: {
+                name: "Madhya Pradesh",
+                festivals: [
+                    {
+                        name: "Mahashivratri",
+                        time: "February/March",
+                        description: "Celebrated with exceptional grandeur at the Mahakaleshwar Temple in Ujjain, one of the 12 Jyotirlingas. Millions of devotees participate in night-long prayers, offering bel leaves and milk to Lord Shiva."
+                    },
+                    {
+                        name: "Navratri",
+                        time: "September/October",
+                        description: "Nine nights of devotion with special celebrations at Maihar Devi Temple and other Shakti Peethas. Traditional dances, fasting, and nightly aartis mark the worship of Goddess Durga."
+                    },
+                    {
+                        name: "Makar Sankranti",
+                        time: "January",
+                        description: "Celebrated with kite flying, traditional sweets, and holy dips in rivers. Special gatherings at ghats along the Narmada and other rivers mark this harvest festival with community feasting."
+                    }
+                ]
+            },
+            maharashtra: {
+                name: "Maharashtra",
+                festivals: [
+                    {
+                        name: "Ganesh Chaturthi",
+                        time: "August/September",
+                        description: "The most beloved festival of Maharashtra celebrating Lord Ganesha. Elaborate clay idols are installed in homes and public pandals, worshipped for ten days with devotional songs, dances, and offerings. The celebration concludes with grand immersion processions where millions participate."
+                    },
+                    {
+                        name: "Gudi Padwa",
+                        time: "March/April",
+                        description: "The Marathi New Year celebrated with families erecting a 'gudi' - a decorated bamboo stick with silk cloth and garland - outside homes symbolizing victory and prosperity. Traditional dishes like puran poli are prepared."
+                    },
+                    {
+                        name: "Ashadi Ekadashi",
+                        time: "June/July",
+                        description: "A major pilgrimage to Pandharpur where devotees called Warkaris walk hundreds of kilometers carrying palkhi (palanquins) of saints. The culmination at Vitthal Temple is a sight of immense devotion."
+                    }
+                ]
+            },
+            manipur: {
+                name: "Manipur",
+                festivals: [
+                    {
+                        name: "Yaoshang (Holi)",
+                        time: "March",
+                        description: "Manipur's version of Holi celebrated for five days. The festival combines traditional Manipuri culture with the spirit of Holi, featuring Thabal Chongba (a traditional dance), sports competitions, and cultural performances."
+                    },
+                    {
+                        name: "Lai Haraoba",
+                        time: "April/May",
+                        description: "An ancient Meitei festival meaning 'merrymaking of the gods.' Traditional dances narrating creation myths, ritual performances, and worship of local deities showcase Manipur's indigenous culture and spiritual heritage."
+                    }
+                ]
+            },
+            meghalaya: {
+                name: "Meghalaya",
+                festivals: [
+                    {
+                        name: "Wangala",
+                        time: "November",
+                        description: "The harvest festival of the Garo tribe thanking the Sun God Saljong. The 100 Drums Wangala Festival features traditional dances with warriors in colorful costumes, creating rhythmic beats with drums and traditional instruments."
+                    },
+                    {
+                        name: "Shad Suk Mynsiem",
+                        time: "April",
+                        description: "A thanksgiving festival of the Khasi tribe celebrating spring and harvest. Young men and women perform traditional dances in colorful attire, thanking God for a bountiful harvest."
+                    }
+                ]
+            },
+            mizoram: {
+                name: "Mizoram",
+                festivals: [
+                    {
+                        name: "Chapchar Kut",
+                        time: "March",
+                        description: "The most vibrant spring festival celebrating the completion of jhum operations (slash and burn cultivation). Traditional Cheraw (bamboo dance) and other folk dances are performed with communities dressed in colorful traditional attire."
+                    }
+                ]
+            },
+            nagaland: {
+                name: "Nagaland",
+                festivals: [
+                    {
+                        name: "Hornbill Festival",
+                        time: "December",
+                        description: "The 'Festival of Festivals' showcasing Nagaland's rich cultural heritage. All 17 tribes participate with traditional dances, songs, sports, crafts, and cuisines. The festival has become internationally famous for celebrating indigenous warrior culture."
+                    }
+                ]
+            },
+            odisha: {
+                name: "Odisha",
+                festivals: [
+                    {
+                        name: "Rath Yatra",
+                        time: "June/July",
+                        description: "The world-famous chariot festival of Puri where Lord Jagannath's colossal chariots are pulled by thousands of devotees. The three massive wooden chariots journey from Jagannath Temple to Gundicha Temple amid unprecedented devotional fervor."
+                    },
+                    {
+                        name: "Durga Puja",
+                        time: "September/October",
+                        description: "Celebrated with unique Odia traditions featuring exquisite silver filigree decorations. Communities create artistic medhas (pandals), and traditional cultural programs showcase Odissi dance and music."
+                    },
+                    {
+                        name: "Raja Parba",
+                        time: "June",
+                        description: "A three-day festival celebrating womanhood and Mother Earth. Young girls dress up, play on decorated swings, and enjoy special traditional treats like poda pitha, marking the earth's preparation for monsoons."
+                    }
+                ]
+            },
+            punjab: {
+                name: "Punjab",
+                festivals: [
+                    {
+                        name: "Lohri",
+                        time: "January",
+                        description: "A winter bonfire festival celebrating the harvest of rabi crops. Families gather around bonfires, offer prayers, throw puffed rice and popcorn into flames, and perform traditional bhangra and gidda dances. The night is filled with songs and celebration."
+                    },
+                    {
+                        name: "Baisakhi",
+                        time: "April",
+                        description: "The vibrant harvest festival marking the Punjabi New Year. Farmers celebrate the ripe harvest with traditional bhangra and gidda dances, fairs with folk music, traditional food, and colorful attire creating a festive atmosphere."
+                    },
+                    {
+                        name: "Diwali",
+                        time: "October/November",
+                        description: "Celebrated with special significance in Punjab as Bandi Chhor Divas. The Golden Temple is illuminated spectacularly, and the festival commemorates both traditional Diwali celebrations and Sikh historical events."
+                    }
+                ]
+            },
+            rajasthan: {
+                name: "Rajasthan",
+                festivals: [
+                    {
+                        name: "Gangaur",
+                        time: "March/April",
+                        description: "An 18-day festival honoring Goddess Gauri. Women carry beautifully decorated idols in colorful processions, perform traditional rituals, and pray for marital happiness and prosperity. The festival showcases Rajasthani culture at its finest with folk songs and dances."
+                    },
+                    {
+                        name: "Teej",
+                        time: "July/August",
+                        description: "A vibrant monsoon festival celebrating marital bliss. Women dress in green attire, apply mehendi, and swing on decorated swings. Folk songs, dances, and grand processions with decorated elephants and camels create a colorful spectacle."
+                    },
+                    {
+                        name: "Pushkar Fair",
+                        time: "October/November",
+                        description: "The world's largest camel fair combined with a sacred bathing festival. Thousands gather for the cattle market, cultural events, and holy dips in Pushkar Lake during the full moon, creating a unique blend of commerce and spirituality."
+                    }
+                ]
+            },
+            sikkim: {
+                name: "Sikkim",
+                festivals: [
+                    {
+                        name: "Losar",
+                        time: "February",
+                        description: "The Tibetan New Year celebrated by Sikkim's Buddhist communities. Monasteries are decorated, traditional dances like Chaam are performed by monks in elaborate costumes, and families gather for feasts and prayers for prosperity."
+                    },
+                    {
+                        name: "Saga Dawa",
+                        time: "May/June",
+                        description: "Celebrating the birth, enlightenment, and death of Buddha. Pilgrims circumambulate stupas and monasteries, offer prayers, and participate in religious ceremonies. The festival holds special significance in this Himalayan Buddhist kingdom."
+                    }
+                ]
+            },
+            tamilnadu: {
+                name: "Tamil Nadu",
+                festivals: [
+                    {
+                        name: "Pongal",
+                        time: "January",
+                        description: "The four-day harvest festival thanking the Sun God for abundant crops. Sweet pongal rice is prepared in earthen pots as it boils over (symbolizing prosperity), homes are decorated with intricate kolam designs, and cattle are honored with decorations and special treats."
+                    },
+                    {
+                        name: "Thaipusam",
+                        time: "January/February",
+                        description: "A major festival dedicated to Lord Murugan. Devotees carry kavadis (elaborate structures) in procession to Murugan temples, especially at Palani. Acts of devotion and penance mark this colorful and spiritually intense celebration."
+                    },
+                    {
+                        name: "Puthandu (Tamil New Year)",
+                        time: "April",
+                        description: "The Tamil New Year celebrated with special dishes, displaying 'kanni' (auspicious items), and temple visits. Homes are decorated with fresh mango leaves and kolam patterns, marking new beginnings with traditional rituals."
+                    }
+                ]
+            },
+            telangana: {
+                name: "Telangana",
+                festivals: [
+                    {
+                        name: "Bathukamma",
+                        time: "September/October",
+                        description: "The floral festival unique to Telangana celebrating the life-giving goddess. Women create beautiful flower stacks, sing folk songs, and immerse the colorful arrangements in water bodies. The nine-day festival showcases Telangana's cultural identity."
+                    },
+                    {
+                        name: "Bonalu",
+                        time: "July/August",
+                        description: "A month-long thanksgiving festival dedicated to Goddess Mahakali. Women carry decorated pots (bonam) on their heads to temples in grand processions, accompanied by traditional drums and dances expressing gratitude and devotion."
+                    },
+                    {
+                        name: "Ugadi",
+                        time: "March/April",
+                        description: "The Telugu New Year celebrated with traditional Ugadi Pachadi representing life's six flavors. Families gather for special meals, wear new clothes, and homes are decorated with mango leaf torans welcoming the new year."
+                    }
+                ]
+            },
+            tripura: {
+                name: "Tripura",
+                festivals: [
+                    {
+                        name: "Kharchi Puja",
+                        time: "July",
+                        description: "The royal festival worshipping the 14 deities of Tripura. Celebrated at the Fourteen Gods Temple with rituals, animal sacrifices, and cultural programs. The seven-day festival attracts devotees from across the region."
+                    },
+                    {
+                        name: "Durga Puja",
+                        time: "September/October",
+                        description: "Celebrated with Bengali fervor across Tripura. Artistic pandals, cultural programs, and traditional rituals mark the five-day celebration of Goddess Durga's victory over evil, bringing communities together."
+                    }
+                ]
+            },
+            uttarpradesh: {
+                name: "Uttar Pradesh",
+                festivals: [
+                    {
+                        name: "Kumbh Mela",
+                        time: "Every 12 years (Prayagraj)",
+                        description: "The world's largest spiritual gathering at the confluence of holy rivers Ganga, Yamuna, and mythical Saraswati. Millions of pilgrims take ritual baths believing it cleanses sins. Saints, sadhus, and devotees create an unparalleled spiritual atmosphere."
+                    },
+                    {
+                        name: "Ram Navami",
+                        time: "March/April",
+                        description: "Celebrating Lord Rama's birth with special significance in Ayodhya, his birthplace. Grand processions, bhajan recitals, and Ramayana readings continue for nine days. Temples are beautifully decorated with devotees observing fasts."
+                    },
+                    {
+                        name: "Janmashtami",
+                        time: "August",
+                        description: "Lord Krishna's birth celebrated magnificently in Mathura and Vrindavan. Midnight celebrations, Ras Leela performances, temple decorations, and dahi handi competitions mark the festival with devotional songs and dances."
+                    }
+                ]
+            },
+            uttarakhand: {
+                name: "Uttarakhand",
+                festivals: [
+                    {
+                        name: "Kumbh Mela (Haridwar)",
+                        time: "Every 12 years",
+                        description: "One of the four sites of the sacred Kumbh Mela where millions gather for holy dips in the Ganges. The atmosphere is charged with spirituality as devotees, sadhus, and pilgrims from around the world congregate for salvation."
+                    },
+                    {
+                        name: "Harela",
+                        time: "July",
+                        description: "A harvest festival marking the onset of monsoon and sowing season. Seeds are sown in soil and the resulting saplings are placed behind ears as blessings. The festival celebrates nature, agriculture, and environmental conservation."
+                    }
+                ]
+            },
+            westbengal: {
+                name: "West Bengal",
+                festivals: [
+                    {
+                        name: "Durga Puja",
+                        time: "September/October",
+                        description: "The grandest festival of Bengal celebrating Goddess Durga's victory over evil. Artistic pandals showcase stunning clay idols crafted by master artisans, while cultural programs, dhaki drums, and traditional dances fill the streets. The five-day celebration transforms cities into open-air art galleries."
+                    },
+                    {
+                        name: "Kali Puja",
+                        time: "October/November",
+                        description: "Coinciding with Diwali, this festival honors Goddess Kali with elaborate decorations and midnight rituals. Devotees offer prayers seeking protection and strength, with the atmosphere filled with spiritual energy and tantric practices."
+                    },
+                    {
+                        name: "Saraswati Puja",
+                        time: "January/February",
+                        description: "The worship of Goddess Saraswati, the deity of knowledge and arts. Students place books and musical instruments near the goddess's idol seeking blessings for wisdom. The festival is celebrated with special fervor in educational institutions."
+                    }
+                ]
+            },
+            // Union Territories
+            andamannicobar: {
+                name: "Andaman & Nicobar Islands",
+                festivals: [
+                    {
+                        name: "Island Tourism Festival",
+                        time: "December-January",
+                        description: "A vibrant celebration showcasing the islands' cultural diversity. The festival features traditional dances, music, water sports, and local cuisine from various tribal communities including Nicobarese and indigenous groups."
+                    },
+                    {
+                        name: "Subhash Mela",
+                        time: "January",
+                        description: "Commemorating Netaji Subhash Chandra Bose who hoisted the Indian flag here. Cultural programs, exhibitions, and patriotic celebrations mark this significant festival honoring freedom struggle history."
+                    }
+                ]
+            },
+            chandigarh: {
+                name: "Chandigarh",
+                festivals: [
+                    {
+                        name: "Mango Festival",
+                        time: "June/July",
+                        description: "Celebrating the summer fruit harvest with hundreds of mango varieties on display. Cultural programs, mango-based cuisine, and competitions make this a unique fruit festival in the planned city."
+                    },
+                    {
+                        name: "Teej",
+                        time: "July/August",
+                        description: "Celebrated with Punjabi-Haryanvi traditions by women with swings, mehendi, and traditional songs. The festival brings communities together in colorful celebrations of monsoon and marital bliss."
+                    }
+                ]
+            },
+            dadranagarhaveli: {
+                name: "Dadra & Nagar Haveli",
+                festivals: [
+                    {
+                        name: "Divaso",
+                        time: "August",
+                        description: "A tribal harvest festival celebrated with traditional dances like Tarpha and folk music. Communities gather to thank nature for the harvest with rituals, songs, and feasting."
+                    },
+                    {
+                        name: "Nariyal Poornima",
+                        time: "August",
+                        description: "Coastal communities offer coconuts to the sea, praying for calm waters and good fishing. Traditional ceremonies and cultural programs mark this maritime festival."
+                    }
+                ]
+            },
+            delhi: {
+                name: "Delhi (NCT)",
+                festivals: [
+                    {
+                        name: "Diwali",
+                        time: "October/November",
+                        description: "The capital celebrates with grand illuminations, markets buzzing with activity, and spectacular fireworks. Homes and monuments are decorated, and the festival brings together Delhi's diverse communities in celebration."
+                    },
+                    {
+                        name: "Dussehra",
+                        time: "September/October",
+                        description: "Famous for the Ramlila performances and massive Ravana effigies burned across the city. The Red Fort grounds host one of the largest celebrations with traditional Ram Leela enacted over nine days."
+                    },
+                    {
+                        name: "Holi",
+                        time: "March",
+                        description: "Celebrated with enthusiasm across Delhi with colors, music, and traditional foods. Communities gather in parks and neighborhoods for joyous celebrations of the festival of colors."
+                    }
+                ]
+            },
+            jammu: {
+                name: "Jammu & Kashmir",
+                festivals: [
+                    {
+                        name: "Baisakhi",
+                        time: "April",
+                        description: "Celebrated in Jammu region with traditional fervor marking harvest and Punjabi New Year. Folk dances, fairs, and community gatherings characterize the celebrations."
+                    },
+                    {
+                        name: "Navratri",
+                        time: "September/October",
+                        description: "Observed with devotion at Mata Vaishno Devi shrine where millions of pilgrims trek during these nine holy nights. Special prayers and rituals mark the worship of the Divine Mother."
+                    },
+                    {
+                        name: "Lohri",
+                        time: "January",
+                        description: "Winter bonfire festival celebrated in Jammu with traditional songs, dances, and offerings to the fire, marking the harvest and seeking blessings for prosperity."
+                    }
+                ]
+            },
+            ladakh: {
+                name: "Ladakh",
+                festivals: [
+                    {
+                        name: "Hemis Festival",
+                        time: "June/July",
+                        description: "The largest Buddhist festival in Ladakh celebrating Guru Padmasambhava's birth. Monks perform sacred Chham dances in colorful masks and costumes at Hemis Monastery, with sacred relics displayed every 12 years."
+                    },
+                    {
+                        name: "Losar",
+                        time: "December/January",
+                        description: "The Ladakhi New Year celebrated with traditional rituals, monastic ceremonies, and family gatherings. Monasteries are decorated, and communities celebrate with local cuisine and cultural performances."
+                    }
+                ]
+            },
+            lakshadweep: {
+                name: "Lakshadweep",
+                festivals: [
+                    {
+                        name: "Island festivals",
+                        time: "Various",
+                        description: "The islands celebrate with traditional boat races, cultural programs, and maritime traditions. Local communities showcase their unique island culture through folk arts and celebrations."
+                    }
+                ]
+            },
+            puducherry: {
+                name: "Puducherry",
+                festivals: [
+                    {
+                        name: "Pongal",
+                        time: "January",
+                        description: "Celebrated with Tamil traditions as the harvest festival. Traditional kolam designs, sweet pongal preparation, and cultural programs mark the four-day celebration of gratitude to nature."
+                    },
+                    {
+                        name: "Bastille Day",
+                        time: "July",
+                        description: "Reflecting French colonial heritage, though major Indian festivals like Diwali, Navratri, and Dussehra are celebrated with equal enthusiasm by the diverse population."
+                    }
+                ]
+            }
+        };
+
+        function showStateFestivals(stateId) {
+            const state = stateFestivals[stateId];
+            const modal = document.getElementById('festivalModal');
+            const modalBody = document.getElementById('modalBody');
+            
+            let festivalsHTML = `
+                <div class="modal-header">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>${state.name} Festivals</h2>
+                </div>
+                <div style="padding: 2rem;">
+            `;
+            
+            state.festivals.forEach(festival => {
+                festivalsHTML += `
+                    <div class="modal-festival">
+                        <h3>${festival.name}</h3>
+                        <p class="modal-festival-time">${festival.time}</p>
+                        <p>${festival.description}</p>
+                    </div>
+                `;
+            });
+            
+            festivalsHTML += '</div>';
+            modalBody.innerHTML = festivalsHTML;
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('festivalModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('festivalModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
